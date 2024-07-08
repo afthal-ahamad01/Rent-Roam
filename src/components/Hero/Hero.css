@@ -1,0 +1,107 @@
+.hero {
+    position: absolute;
+    margin: 0px 120px;
+    margin-top: 200px;
+    top: 60px;
+    /* Adjusted to place content below the navbar */
+    left: 20px;
+    z-index: 20;
+
+}
+
+.hero-text {
+    color: #fff;
+    margin-top: 0;
+    top: 60px;
+    /* Start at the top of the hero container */
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 130px;
+
+    /* Changed to relative for better control within hero */
+    z-index: 100;
+    animation: slideInFromLeft 1s ease-in-out
+
+}
+
+.hero-explore {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: fit-content;
+    margin-top: 70px;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.hero-explore p {
+    font-size: 20px;
+    color: #292929;
+    font-weight: 500;
+}
+
+.hero-explore img {
+    width: 50px;
+    margin-left: 10px;
+    filter: brightness(100%);
+}
+
+.hero-dot-play {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.hero-dots {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 23px;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 7.5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.hero-dot.orange {
+    background-color: orangered;
+}
+
+.hero-play {
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    right: 30px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.hero-play img {
+    width: 30px;
+    margin-right: 10px;
+    filter: brightness(100%);
+}
+
+.hero-play p {
+    color: #fff;
+    font-weight: 400;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        filter: blur(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+}
